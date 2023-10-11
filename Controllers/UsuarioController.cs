@@ -1,14 +1,16 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UsuariosApi.Data.Dtos;
 
 namespace UsuariosApi.Controllers
 {
     [ApiController]
-    Route()
-    public class UsuarioController : Controller
+    [Route("Controller")]
+    public class UsuarioController : ControllerBase
     {
-        public IActionResult Index()
+        [HttpPost]
+        public IActionResult CadastraUsuario(CreateUsuarioDto usuarioDto)
         {
-            return View();
+            throw new NotImplementedException();
         }
     }
 }
